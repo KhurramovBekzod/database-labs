@@ -16,7 +16,7 @@ INSERT INTO students (name, email, faculty) VALUES
 SELECT name, email FROM students;
   
 SELECT * FROM students;
- 
+
   
 SELECT student_id, faculty FROM students;
   
@@ -35,5 +35,13 @@ SELECT name, email FROM students LIMIT 2;
 SELECT name, email FROM students ORDER BY student_id LIMIT 2;
  
   
-SELECT name, faculty FROM students WHERE faculty = 'MED'; 
+SELECT name, faculty FROM students WHERE faculty = 'MED';
+
+  
+  
+SELECT name, email FROM students LIMIT 2;
+  
+SELECT name, email FROM students ORDER BY student_id LIMIT 2;
  
+  
+SELECT name, faculty FROM students WHERE faculty = 'MED'; 
