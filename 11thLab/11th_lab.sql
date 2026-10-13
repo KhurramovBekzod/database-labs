@@ -52,4 +52,4 @@ WHERE student_id IN (2, 3, 5);
 
 SELECT * FROM Students ORDER BY student_id;
 
-\copy Students TO 'C:/Database Lab/students_export.csv' DELIMITER ',' CSV HEADER
+\copy Students TO 'C:/Database Lab/students_table.csv' DELIMITER ',' CSV HEADER
