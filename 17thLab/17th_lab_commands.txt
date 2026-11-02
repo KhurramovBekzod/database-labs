@@ -1,0 +1,19 @@
+cd "C:\Database Lab"
+set "PATH=%PATH%;C:\Program Files\PostgreSQL\18\bin"
+pg_dump --version
+
+pg_dump -h localhost -U postgres -d backup_db -f lab17\backup.sql
+pg_dump -h localhost -U postgres -d backup_db -Fc -v -f lab17\backup.dump
+pg_dump -h localhost -U postgres -d backup_db -t employees -t products -f lab17\tables_backup.sql
+pg_dump -h localhost -U postgres -d backup_db -s -f lab17\schema_only.sql
+pg_dump -h localhost -U postgres -d backup_db -a -f lab17\data_only.sql
+pg_dump -h localhost -U postgres -d backup_db -T customer_feedback -T sales_data -f lab17\backup_without_feedback.sql
+dir lab17
+
+pg_restore --list lab17\backup.dump
+createdb -h localhost -U postgres backup_restore_test
+pg_restore -h localhost -U postgres -d backup_restore_test lab17\backup.dump
+psql -h localhost -U postgres -d backup_restore_test -c "\dt" -c "SELECT * FROM employees ORDER BY employee_id"
+createdb -h localhost -U postgres backup_single_table
+pg_restore -h localhost -U postgres -d backup_single_table -t employees lab17\backup.dump
+psql -h localhost -U postgres -d backup_single_table -c "\dt" -c "SELECT COUNT(*) FROM employees"
