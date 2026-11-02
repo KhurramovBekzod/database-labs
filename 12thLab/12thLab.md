@@ -1,4 +1,5 @@
 ***SELECT and WHERE***
+
 It covers all columns, chosen columns, the bonus calculation, the Sales and Engineering filters
 <img width="1177" height="914" alt="image" src="https://github.com/user-attachments/assets/646becce-8691-4419-9fe8-c758bd129bda" />
 <img width="1485" height="864" alt="image" src="https://github.com/user-attachments/assets/05fff21b-afd6-4801-98e6-48a48b75c116" />
