@@ -1,0 +1,4 @@
+product_id,product_name,price
+4,Monitor,180.00
+5,Broken row,not-a-number
+6,Webcam,60.00
