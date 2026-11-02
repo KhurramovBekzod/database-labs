@@ -1,4 +1,4 @@
-<img width="1011" height="598" alt="image" src="https://github.com/user-attachments/assets/14ca6cd8-d328-4a9a-9eb5-7cb8ea6ef172" />***COPY TO, a | delimiter with N/A for NULL, importing selected columns, exporting a query***
+***COPY TO, a | delimiter with N/A for NULL, importing selected columns, exporting a query***
 
 
 COPY exports a table or a query result to a file and imports files back, with a custom delimiter, NULL text and column list
